@@ -1,12 +1,15 @@
 ## cachmatrix.R
-## Provides functions that create the special matrix object that can cache its inverse
+## Implemented by R.C. on 2015/02/22
+##
+## This R code file provides functions that create the special matrix object
+## that can cache its inverse.
 
 ## Function: makeCacheMatrix
 ## Input: (Optional) theMatrix: a matrix
 ## This function creates a special matrix object (CacheMatrix) that contains:
 ##  - a matrix
 ##  - the inverse (initially set to null but can be set when computed)
-##  - set(matrixData): sets the matrix to be matrixData, and reset the inverse to null
+##  - set(matrixData): sets the matrix to be matrixData, and resets the inverse to null
 ##  - get(): returns the matrix
 ##  - setinverse(inverseValue): sets the inverse to be inverseValue
 ##  - getinverse(): returns the inverse
